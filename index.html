@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=divece-width, initial-scale=1.0">
+        <title>Kiểm tra số chẵn</title>
+    </head>
+    <body>
+   <h3> Vui lòng điền số </h3>
+    <input id="number" type="text" />
+    <button id="btn" type="button"> Kiểm tra </button>
+    
+   <script>
+        document.getElementById("btn").style.fontWeight = "550px";
+        document.getElementById("btn").onclick = function getValue (){
+            let output = +document.getElementById("number").value;
+            if(output % 2 == 0){
+                alert(output + " là số chẵn");
+            }else{
+                alert(output + " là số lẻ");
+            }
+        } 
+    </script>
+    </body>
+       
+   </scrip>
